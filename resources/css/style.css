@@ -26,8 +26,7 @@ body {
 
 nav {
   background-color: OrangeRed;
-  color: White;
-  padding: 0.75rem 1.25rem;
+  color: White; 
 }
 
 ul {
@@ -37,6 +36,7 @@ ul {
 
 li {
   display: inline-block;
+  padding: 0.75rem 1.25rem;
 }
 
 .supporting,
@@ -97,6 +97,10 @@ footer {
   padding: 0 1rem;
 }
 
+footer nav{
+  display: block;
+}
+
 footer .container {
   display: flex;
   align-items: center;
@@ -105,3 +109,31 @@ footer .container {
   color: white;
 }
 
+@media screen and (max-width: 960px){
+  .main{
+    padding-top: 0px;
+
+  }
+}
+
+@media  screen and (max-width: 700px) {
+  .supporting img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  h1{
+    font-size: 2rem;
+  }
+
+  .gallery img{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  footer nav{
+    display: none;
+  }
+}
